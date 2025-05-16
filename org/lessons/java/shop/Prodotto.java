@@ -14,11 +14,10 @@ public class Prodotto { // varidabili d'istanza
     private BigDecimal iva;
 
     // costruttore
-    public Prodotto(String nome, String marca, String descrizione, BigDecimal prezzo) {
+    public Prodotto(String nome, String descrizione, BigDecimal prezzo) {
         Random randomGeneretor = new Random();
         this.codice = randomGeneretor.nextInt(11111111, 99999999);
         this.nome = nome;
-        this.marca = marca;
         this.descrizione = descrizione;
         this.prezzo = prezzo;
         this.iva = new BigDecimal(0.22f);
@@ -34,7 +33,7 @@ public class Prodotto { // varidabili d'istanza
             this.nome = nome;
         } else {
             System.out.println("Errore compilazione nome."); // altrimenti stampami questo messaggio
-            
+
         }
 
     }

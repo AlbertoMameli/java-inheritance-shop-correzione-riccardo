@@ -6,8 +6,8 @@ public class Smartphone extends Prodotto { // variabili d'istanza
     private String codiceImei;
     private int memoriaGb;
 
-    public Smartphone(String nome, String marca, String descrizione, BigDecimal prezzo, String codiceImei, int memoriaGb) {
-      super(nome, marca, descrizione, prezzo);
+    public Smartphone(String nome, String marca, BigDecimal prezzo, String codiceImei, int memoriaGb) {
+      super(nome, marca, prezzo);
         this.codiceImei = codiceImei;
         this.memoriaGb = memoriaGb;
     }

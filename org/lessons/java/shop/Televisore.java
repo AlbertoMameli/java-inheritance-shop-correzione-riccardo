@@ -7,8 +7,8 @@ public class Televisore extends Prodotto { // variabili d'istanza
     private boolean isSmartTv;
 
 
-    public Televisore(String nome, String marca, String descrizione, BigDecimal prezzo, int pollici, boolean isSmartTv) { // costruttore tv
-        super(nome, marca, descrizione, prezzo);
+    public Televisore(String nome, String marca, BigDecimal prezzo, int pollici, boolean isSmartTv) { // costruttore tv
+        super(nome, marca, prezzo);
         this.pollici = pollici;
         this.isSmartTv = isSmartTv;
 
